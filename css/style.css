@@ -206,3 +206,22 @@ a {
     }
   }
 }
+
+/* mv */
+.mainvisual {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

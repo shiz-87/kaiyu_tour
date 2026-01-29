@@ -286,3 +286,36 @@ a {
     transform: rotate(0);
   }
 }
+
+/* parallax */
+.parallax {
+  width: 100%;
+  height: 600px;
+  background: url(../img/parallax.jpg) fixed center / cover;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    height: 400px;
+    background-attachment: scroll;
+  }
+
+  .wave-top {
+    width: 100%;
+    position: absolute;
+    top: -2px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .wave-bottom {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

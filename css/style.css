@@ -311,7 +311,7 @@ a {
 
   .wave-bottom {
     position: absolute;
-    bottom: -2px;
+    top: calc(100% - 2px);
     width: 100%;
 
     img {
@@ -610,6 +610,182 @@ a {
 
         @media screen and (max-width: 767px) {
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+#map {
+  background: #f2f9fd;
+  padding-block: 200px;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    padding-block: 100px;
+  }
+
+  .wave-top {
+    position: absolute;
+    top: -2px;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .head-text {
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .activity-map {
+    position: relative;
+
+    .spot {
+      position: absolute;
+      width: 100%;
+      max-width: 220px;
+      text-align: center;
+
+      .spot-btn {
+        background: #fff;
+        border-radius: 30px;
+        border: 1px solid #121212;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 35px;
+        position: relative;
+
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+
+        &::before {
+          content: "";
+          width: 11px;
+          height: 1px;
+          background: #121212;
+          position: absolute;
+          top: 15px;
+          right: 14px;
+        }
+
+        &::after {
+          content: "";
+          width: 1px;
+          height: 11px;
+          background: #121212;
+          position: absolute;
+          top: 10px;
+          right: 19px;
+        }
+      }
+
+      .spot-img {
+        max-width: 180px;
+        display: none;
+        margin-inline: auto;
+        position: absolute;
+        top: -190px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .spot1 {
+      top: 40%;
+      left: 1%;
+    }
+
+    .spot2 {
+      top: 69%;
+      left: 19%;
+    }
+
+    .spot3 {
+      top: 53%;
+      left: 32%;
+    }
+
+    .spot4 {
+      top: 95%;
+      left: 45%;
+    }
+
+    .spot5 {
+      top: 86%;
+      left: 70%;
+    }
+
+    .spot-list {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 20px;
+        margin-top: 40px;
+      }
+
+      li {
+        @media screen and (max-width: 767px) {
+          width: calc(50% - 10px);
+        }
+
+        .title {
+          @media screen and (max-width: 767px) {
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+
+          .no {
+            @media screen and (max-width: 767px) {
+              width: 35px;
+              height: 35px;
+              background: #fff;
+              border: 1px solid #707070;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 17px;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        img {
+          @media screen and (max-width: 767px) {
+            border-radius: 50%;
+          }
         }
       }
     }

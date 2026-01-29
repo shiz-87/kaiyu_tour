@@ -51,3 +51,46 @@ $(function () {
     ],
   });
 });
+
+// mapセクションのアクティビティ表示
+$(function () {
+  $("#map .spot1 .spot-btn")
+    .mouseover(function () {
+      $("#map .spot1 .spot-img").show();
+    })
+    .mouseout(function () {
+      $("#map .spot1 .spot-img").hide();
+    });
+
+  $("#map .spot2 .spot-btn")
+    .mouseover(function () {
+      $("#map .spot2 .spot-img").show();
+    })
+    .mouseout(function () {
+      $("#map .spot2 .spot-img").hide();
+    });
+
+  $("#map .spot3 .spot-btn")
+    .mouseover(function () {
+      $("#map .spot3 .spot-img").show();
+    })
+    .mouseout(function () {
+      $("#map .spot3 .spot-img").hide();
+    });
+
+  $("#map .spot4 .spot-btn")
+    .mouseover(function () {
+      $("#map .spot4 .spot-img").show();
+    })
+    .mouseout(function () {
+      $("#map .spot4 .spot-img").hide();
+    });
+
+  $("#map .spot5 .spot-btn")
+    .mouseover(function () {
+      $("#map .spot5 .spot-img").show();
+    })
+    .mouseout(function () {
+      $("#map .spot5 .spot-img").hide();
+    });
+});
